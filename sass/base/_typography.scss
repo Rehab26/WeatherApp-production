@@ -1,0 +1,24 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6rem;
+    color: $color-white;
+    font-weight: 300;
+}
+
+.primary-heading {
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    align-self: center;
+    color: $color-white;
+    
+
+}
+.day {
+    font-weight: 300;
+}

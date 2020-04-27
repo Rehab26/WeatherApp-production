@@ -1,0 +1,9 @@
+@mixin btn-main {
+    &:link,
+    &:active,
+    *:visited {
+        text-decoration: none;
+        color: $color-white;
+
+    }
+}

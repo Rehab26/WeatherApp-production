@@ -1,0 +1,71 @@
+.weather {
+    text-align: center;
+    position: relative;
+    &-card{
+        position: relative;
+        height: 60rem;
+        padding-top: 1rem;
+        width: 30rem;
+        position: absolute;
+        top:100%;
+        left: 50%;
+        transform: translate(-50%,10%);
+        background-image:linear-gradient(to right bottom ,
+        rgba($color-white , 0.6) , 
+        rgba($primary-color,0.6)) , var(--brokencloud);
+        //url(../img/bg.jpeg);
+        background-size: cover;
+        background-position: bottom center;
+    }
+
+}
+.weather-info {
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-transform: uppercase;
+    &__description {
+        font-weight: 100;
+        font-size: 5rem;
+        text-shadow: 1rem 3rem 3rem rgba(0,0,0, 0.4);
+    }
+        &__temp{
+            align-self: flex-end;
+            font-size: 2rem;
+
+            &--bottom {
+                border-top: 1px solid $color-white;
+                border-radius: .1rem;
+                display: block;
+                padding-top: .4rem;
+            }
+        }
+
+}
+.weather-detail {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    &__temp{
+        font-size: 8rem;
+        font-weight: 100;
+    }
+}
+
+@keyframes rotatation {
+    100% {
+        transform: rotate(360deg) ;
+    }
+}
+.loading {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 9rem;
+    height: 9rem;
+    animation:rotatation 1s linear infinite;
+    backface-visibility: hidden;
+    animation-fill-mode: both;
+}

@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 300; }
+
+.primary-heading {
+  font-size: 2.5rem;
+  font-weight: 100;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  align-self: center;
+  color: #fff; }
+
+.day {
+  font-weight: 300; }
+
+.search {
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  color: #333; }
+  .search__input {
+    display: none;
+    outline: none;
+    border: none;
+    align-self: center;
+    height: 3rem;
+    border-radius: 1.5rem 0 1.5rem 0;
+    background-color: #e7e5e5;
+    padding: 1px 10px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #ABB3C7; }
+
+.logo {
+  align-self: center; }
+
+.add-btn {
+  font-size: 2rem;
+  text-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.3); }
+  .add-btn:link, .add-btn:active,
+  .add-btn *:visited {
+    text-decoration: none;
+    color: #fff; }
+
+.weather {
+  text-align: center;
+  position: relative; }
+  .weather-card {
+    height: 60rem;
+    padding-top: 1rem;
+    width: 30rem;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(91, 146, 173, 0.6)), var(--broken-clouds);
+    background-size: cover;
+    background-position: bottom center; }
+
+.weather-info {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  text-transform: uppercase; }
+  .weather-info__description {
+    font-weight: 100;
+    font-size: 5rem;
+    text-shadow: 1rem 3rem 3rem rgba(0, 0, 0, 0.4); }
+  .weather-info__temp {
+    align-self: flex-end;
+    font-size: 2rem; }
+    .weather-info__temp--bottom {
+      border-top: 1px solid #fff;
+      border-radius: .1rem;
+      display: block;
+      padding-top: .4rem; }
+
+.weather-detail {
+  text-align: left;
+  display: flex;
+  justify-content: center; }
+  .weather-detail__temp {
+    font-size: 8rem;
+    font-weight: 100; }
+
+.container {
+  background-color: #5B92AD;
+  height: 100vh; }
+
+:root {
+  --clear-sky:url(../img/bg.jpeg);
+  --cloudy-sky:url(../img/cloudy.jpeg);
+  --rainy-night:url(../img/rainy.jpeg);
+  --sun:url(../img/sun.jpeg);
+  --broken-clouds:url(../img/brokenclouds.jpeg); }

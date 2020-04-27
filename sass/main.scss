@@ -1,0 +1,19 @@
+@import "abstract/variables";
+@import "abstract/mixins";
+@import "base/base";
+@import "base/animation";
+@import "base/typography";
+
+@import "component/search";
+@import "component/weathercard";
+
+@import "layout/header";
+@import "layout/layout";
+
+:root {
+    --clear-sky:url(../img/bg.jpeg);
+    --cloudy-sky:url(../img/cloudy.jpeg);
+    --rainy-night:url(../img/rainy.jpeg);
+    --sun:url(../img/sun.jpeg);
+    --brokencloud:url(../img/brokencloud.jpeg);
+}

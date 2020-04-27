@@ -1,0 +1,27 @@
+.search {
+    
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    color: $color-grey-dark;
+    &__input{
+        display: none;
+        outline: none;
+        border: none;
+        align-self: center;
+        height: 3rem;
+        border-radius: 1.5rem 0 1.5rem 0;
+        background-color: $color-grey-light;
+        padding: 1px 10px;
+        font-size: 1.4rem;
+        border-bottom: 2px solid $secondary-color;
+    }
+}
+.logo {
+    align-self: center;
+}
+.add-btn {
+    @include btn-main;
+    font-size: 2rem;
+    text-shadow: 1rem 2rem 4rem rgba(0,0,0,0.3);
+}
